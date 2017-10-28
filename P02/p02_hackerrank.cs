@@ -8,21 +8,21 @@ class Solution {
         int t = Convert.ToInt32(Console.ReadLine());
         for(int a0 = 0; a0 < t; a0++){
             long n = Convert.ToInt64(Console.ReadLine());
-            Console.WriteLine(SumEvenFicurrentNumber((ulong)n));
+            Console.WriteLine(SumEvenFib((ulong)n));
         }
     }
     
-      static ulong SumEvenFicurrentNumber(ulong n)
+      static ulong SumEvenFib(ulong n)
         {
-            ulong sum = 0, prevNumcurrentNumberer=0, currentNumber=1, nextNumber=0;
+            ulong sum = 0, prevNumber=0, currentNumber=1, nextNumber=0;
             while (currentNumber < n)
             {
-                nextNumber = prevNumcurrentNumberer + currentNumber;
-                prevNumcurrentNumberer = currentNumber;
+                nextNumber = prevNumber + currentNumber;
+                prevNumber = currentNumber;
                 currentNumber = nextNumber;
-                if (prevNumcurrentNumberer % 2 == 0)
+                if (prevNumber % 2 == 0)
                 {
-                    sum += prevNumcurrentNumberer;
+                    sum += prevNumber;
                 }
             }
             return sum;
