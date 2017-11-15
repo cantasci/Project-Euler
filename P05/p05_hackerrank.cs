@@ -16,8 +16,6 @@ namespace Euler005
                 int n = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine(SmallestValue(n));
             }
-
-            Console.Read();
         }
 
         /// <summary>
