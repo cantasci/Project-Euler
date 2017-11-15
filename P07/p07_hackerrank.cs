@@ -28,7 +28,7 @@ namespace Euler007
         }
 
         /// <summary>
-        /// Find prime number until reach to max index
+        /// Find all prime numbers until index reached to max
         /// </summary>
         /// <param name="primes"></param>
         /// <param name="max"></param>
